@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Absurdas - Em Primeira mão</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f9ca24);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #333;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .header {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .news-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .news-card:hover {
+            transform: scale(1.05);
+        }
+        .btn-troll {
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn-troll:hover {
+            background-color: #ff5252;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="header">
+            <h1>📰 Notícias Absurdas - O Portal da Verdade!</h1>
+            <p>As notícias que você nunca acreditou... mas agora vai!</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="news-card">
+                    <h3>🐱 Gato Eleito Presidente da França!</h3>
+                    <p>Em uma virada surpreendente, um gato siamês chamado Whiskers venceu as eleições francesas. "Miauuu para todos!", declarou o novo líder.</p>
+                    <button class="btn btn-troll" onclick="alert('Miauuu trollado! Isso é uma trollagem!')">Compartilhar no Facebook</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="news-card">
+                    <h3>🌍 Terra é Plana, Confirma NASA!</h3>
+                    <p>Cientistas revelam: a Terra é um disco gigante flutuando no espaço. "Foi tudo uma conspiração!", diz fonte anônima.</p>
+                    <button class="btn btn-troll" onclick="window.location.href='https://www.nasa.gov'">Ver Prova Oficial</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="news-card">
+                    <h3>💕PornBin Onde o Prazer não tem limites!</h3>
+                    <p>O novo site do momento PornBinnnnnnnn venha se satisfazer</p>
+                    <button class="btn btn-troll" onclick="alert('Haha, trollado! Isso não existe, foste trollado e dinheiro no bolso entrou 😂😂.')">Entrar agora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Disclaimer: Tudo isso é uma trollagem total! Não acredite em nada aqui. Feito com ❤️ para diversão. #TrollagemBonita - A´J</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animação extra: faz o título piscar
+        setInterval(() => {
+            document.querySelector('h1').style.color = document.querySelector('h1').style.color === 'red' ? '#333' : 'red';
+        }, 1000);
+    </script>
+</body>
+</html>
